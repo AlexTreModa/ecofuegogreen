@@ -68,6 +68,14 @@ a { color: inherit; }
 .btn--sm { padding: 0.55rem 1.2rem; font-size: 0.85rem; }
 .btn--lg { padding: 1.1rem 2.4rem; font-size: 1.05rem; }
 .btn--block { width: 100%; }
+.btn--mp {
+  background: linear-gradient(135deg, #009ee3, #007eb5);
+  color: var(--white);
+  box-shadow: 0 8px 24px rgba(0, 158, 227, 0.35);
+}
+.btn--mp:hover { box-shadow: 0 12px 30px rgba(0, 158, 227, 0.45); }
+.btn[hidden] { display: none; }
+.product-card__body .btn + .btn { margin-top: 0.6rem; }
 
 /* ===== Header ===== */
 .header {

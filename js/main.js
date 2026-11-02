@@ -19,6 +19,15 @@
     });
   }
 
+  const mpLinks = window.MP_LINKS || {};
+  document.querySelectorAll("[data-mp]").forEach((btn) => {
+    const url = mpLinks[btn.dataset.mp];
+    if (url) {
+      btn.href = url;
+      btn.hidden = false;
+    }
+  });
+
   const header = document.getElementById("header");
   if (header) {
     const onScroll = () => {
