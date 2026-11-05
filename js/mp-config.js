@@ -7,7 +7,7 @@
   Si un link queda vacío, el producto sigue mostrando solo WhatsApp.
 */
 window.MP_LINKS = {
-  pack6: "", // Pack mayorista 6 cajas — $ 108.000
-  pack3: "", // Pack 3 cajas — $ 63.000
-  caja1: ""  // 1 caja — $ 24.000
+  pack6: "https://mpago.la/2gepFuw", // Pack mayorista 6 cajas — $ 108.000
+  pack3: "https://mpago.la/1igfG8z", // Pack 3 cajas — $ 63.000
+  caja1: "https://mpago.la/2FETuL9"  // 1 caja — $ 24.000
 };
