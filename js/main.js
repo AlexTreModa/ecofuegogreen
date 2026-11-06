@@ -1,4 +1,5 @@
 (() => {
+  // Mobile Burger Menu
   const burger = document.getElementById("burger");
   const nav = document.getElementById("nav");
 
@@ -19,6 +20,7 @@
     });
   }
 
+  // Mercado Pago Links Injection
   const mpLinks = window.MP_LINKS || {};
   document.querySelectorAll("[data-mp]").forEach((btn) => {
     const url = mpLinks[btn.dataset.mp];
@@ -28,12 +30,12 @@
     }
   });
 
+  // Sticky Header Scroll Effect
   const header = document.getElementById("header");
   if (header) {
     const onScroll = () => {
-      header.style.boxShadow = window.scrollY > 10
-        ? "0 6px 24px rgba(26,26,26,0.1)"
-        : "none";
+      const scrolled = window.scrollY > 20;
+      header.classList.toggle("is-scrolled", scrolled);
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
